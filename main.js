@@ -3,18 +3,16 @@ const yourcontacts = document.getElementById('your-contacts');
 const all = document.getElementById('all');
 const delete_contact = document.getElementById('delete_contact').value;
 
-let con = JSON.parse(localStorage.getItem('user')) || [];
+let contact = JSON.parse(localStorage.getItem('user')) || [];
 
 class Users{
 
     static setContact(){
         const name = document.getElementById('name').value;
-        console.log('Value of name:', name);
-        
+              
         const user = {
                 name: name,  
         }
-        console.log('User object:', user);
         
         localStorage.setItem('user', JSON.stringify(user));
     }
@@ -59,6 +57,7 @@ class Users{
     }
 
 }
+const users = new Users()
 
 
 

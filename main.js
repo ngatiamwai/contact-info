@@ -39,7 +39,7 @@ class Users{
                 <span>${users.text}</span>
             </div>
             `;
-        todoList.appendChild(usersElement);
+        userList.appendChild(usersElement);
     }
     
     static viewContact(){ 
